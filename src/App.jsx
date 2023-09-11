@@ -24,10 +24,10 @@ function App() {
       <section className="w-fit">
         <GuestBookForm refresh={setRefresh} />
         <div className="flex flex-col gap-4">
-          {guestBookEntries.map((entry) => {
+          {guestBookEntries.map((entry, index) => {
             return (
               <div
-                key={entry.id}
+                key={index}
                 className="px-2">
                 <p>
                   <span className="font-bold">{entry.firstName} </span>
